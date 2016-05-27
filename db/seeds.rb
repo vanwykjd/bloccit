@@ -18,6 +18,14 @@ require 'random_data'
 		)
 	end
 	
+	puts "#{Post.count}"
+	unique_post = Post.find_or_create_by(title: "Unique Title", body: "Unique Body")
+	puts "#{Post.count}"
+	
+	puts "#{Comment.count}"
+	Comment.find_or_create_by(post: unique_post, body: "Unique Comment")
+	puts "#{Comment.count}"
+	
 	puts "Seed finished"
 	puts "#{Post.count} posts created"
 	puts "#{Comment.count} comments created"

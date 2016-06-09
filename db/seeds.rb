@@ -37,6 +37,8 @@ require 'random_data'
 			)
 		end
 	
+	sponsord_post = SponsoredPost.all
+	
 	
 	puts "Seed finished"
 	puts "#{SponsoredPost.count} sponsord posts created"

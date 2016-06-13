@@ -1,5 +1,6 @@
 require 'random_data'
 
+
 	5.times do
 		User.create!(
 			name:     RandomData.random_name,
@@ -8,6 +9,21 @@ require 'random_data'
 	)
 	end
 	users = User.all
+
+	# Create an admin user
+	admin = User.create!(
+		name:     'Admin User',
+		email:    'admin@example.com',
+		password: 'helloworld',
+		role:     'admin'
+	)
+ 
+	# Create a member
+	member = User.create!(
+		name:     'Member User',
+		email:    'member@example.com',
+		password: 'helloworld'
+	)
 
 	15.times do
 		Topic.create!(

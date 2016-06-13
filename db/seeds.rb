@@ -24,6 +24,14 @@ require 'random_data'
 		email:    'member@example.com',
 		password: 'helloworld'
 	)
+	
+	# Create a moderator
+	moderator = User.create!(
+		name:	  'Moderator User',
+		email:    'moderator@example.com',
+		password: 'helloworld',
+		role: 'moderator'
+	)
 
 	15.times do
 		Topic.create!(

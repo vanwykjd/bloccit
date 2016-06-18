@@ -24,6 +24,7 @@ require 'random_data'
 		email:    'member@example.com',
 		password: 'helloworld'
 	)
+	
 
 	15.times do
 		Topic.create!(

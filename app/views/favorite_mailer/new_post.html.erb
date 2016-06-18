@@ -1,0 +1,13 @@
+<html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>You are now following the created post: "<%= @post.title %>". You will be notified of all comments.
+     If you no longer wish to recieve notifications, visit online at: <%= link_to "post", topic_post_url(@post.topic, @post) %> to unfavorite.</h1>
+
+     <p>
+       <%= link_to "View Post on site", topic_post_url(@post.topic, @post) %>
+     </p>
+   </body>
+</html>

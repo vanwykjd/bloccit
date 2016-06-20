@@ -9,6 +9,7 @@ class TopicsController < ApplicationController
 	
 	def show
 		@topic = Topic.find(params[:id])
+		@comments = Comment.where("topic_id = #{@topic.id}")
 		
 		unless @topic.public || current_user
     		flash[:alert] = "You must be signed in to view private topics."

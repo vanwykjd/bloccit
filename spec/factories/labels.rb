@@ -1,6 +1,5 @@
 FactoryGirl.define do
-   sequence(:name) { |n| "Label#{n}" }
      factory :label do
-     name
+         sequence(:name) { |n| "Label#{n}" }
    end
 end

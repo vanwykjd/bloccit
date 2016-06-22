@@ -51,7 +51,7 @@ RSpec.describe CommentsController, type: :controller do
      end
    end
  
- 
+
 
    context "member user doing CRUD on a comment they own" do
      before do

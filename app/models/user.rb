@@ -39,6 +39,7 @@ class User < ActiveRecord::Base
     		self.auth_token = SecureRandom.base64(64)
     		break unless User.find_by(auth_token: auth_token)
     	end
-	end 
+	end
+
 	
 end

@@ -5,7 +5,7 @@ class Api::V1::TopicsController < Api::V1::BaseController
  
    def index
    	 topics = Topic.all
-     render json: topics, status: 20
+     render json: topics, status: 200
    end
  
    def show
